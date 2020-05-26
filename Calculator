@@ -1,0 +1,30 @@
+which=input('Welcome to the advanced calculator!\nWhat would you liek to do? Add, subract, multiply or divide? ')
+a=int(input('Enter number '))
+b=int(input('Enter second number '))
+
+    
+def add(a,b):
+    new=a+b
+    return new 
+def mul(a,b):
+    new=a*b
+    return new 
+def sub(a,b):
+    new=a-b
+    return new 
+def div(a,b):
+    new=(a//b)
+    return new 
+
+if which == 'add':
+    print(add(a,b))
+
+if which == 'multiply':
+    n=mul(a,b)
+    print('You total is {}'.format(n))
+
+if which == 'subtract':
+    print(sub(a,b))
+
+if which == 'divide':
+    print(div(a,b))
